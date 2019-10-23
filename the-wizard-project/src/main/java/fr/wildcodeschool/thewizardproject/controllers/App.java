@@ -13,7 +13,7 @@ public class App {
     	ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("classpath*:applicationContext.xml");
         
     	// the cosyDrinkAdvice is created
-        WizardInterface myWizard = context.getBean("theWizard", WizardInterface.class);
+        WizardInterface myWizard = context.getBean("theWizard2", WizardInterface.class);
 
         context.close();
 

@@ -10,8 +10,14 @@
     <bean id="myDress" class="fr.wildcodeschool.thewizardproject.models.Dress">
     </bean>
 
-    <!-- Bean of the book -->
+    <!-- Bean of the wizard -->
     <bean id="theWizard" class="fr.wildcodeschool.thewizardproject.models.Dumbledore">
+        <!-- Injection in the constructor : -->
+        <constructor-arg ref="myDress"/>
+    </bean>
+    
+    <!-- Bean of the wizard2 -->
+    <bean id="theWizard2" class="fr.wildcodeschool.thewizardproject.models.Gandalf">
         <!-- Injection in the constructor : -->
         <constructor-arg ref="myDress"/>
     </bean>
